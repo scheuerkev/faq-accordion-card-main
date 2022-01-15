@@ -1,0 +1,57 @@
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .image__mobile {
+    display: none;
+  }
+
+  .image__shadow-mobile {
+    display: none;
+  }
+
+  .faq {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 60%;
+    gap: 2rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    padding: 0;
+
+    h1 {
+      text-align: initial;
+      padding-top: 0;
+    }
+
+    .content__container {
+      margin: 5.5rem 5.5rem 6.5rem 0;
+    }
+  }
+
+  .image__container {
+    background-image: url("../images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -80px;
+    background-position-y: center;
+    background-size: 460px;
+    position: relative;
+  }
+
+  .image__shadow-desktop {
+    display: block !important;
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 500px;
+  }
+
+  .image__box-desktop {
+    display: block !important;
+    position: absolute;
+    top: 180px;
+    left: -92px;
+  }
+}
