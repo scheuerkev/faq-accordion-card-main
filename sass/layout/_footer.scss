@@ -1,0 +1,24 @@
+footer {
+  min-height: 50px;
+  background: $primary-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p {
+    color: $neutral-gray;
+  }
+
+  a {
+    color: $neutral-light-blue;
+    display: inline-block;
+    transition: all 120ms ease-in;
+
+    &:hover {
+      color: $primary-soft-red;
+      text-decoration: overline;
+      transform: translateY(-1px);
+    }
+  }
+}
