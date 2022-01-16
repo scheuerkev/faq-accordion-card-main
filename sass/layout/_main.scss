@@ -66,12 +66,38 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 150ms ease-in-out;
 }
 
 .question::after {
   content: url("../images/icon-arrow-down.svg");
+  transition: all 250ms ease-in-out;
+}
+
+.active__question {
+  font-weight: 700;
+  transform: translateX(1px);
+  color: $primary-blue;
+}
+
+.active__question::after {
+  transform: rotate(180deg);
 }
 
 .answer {
+  width: 90%;
   display: none;
+  opacity: 0;
+  font-size: 1.2rem;
+  transition: opacity 2s ease-in;
+}
+
+.active__answer {
+  display: block;
+  opacity: 1;
+  padding: 1rem 0 2rem 0;
+}
+
+.active__content {
+  margin: 2rem 0 0 0 !important;
 }
