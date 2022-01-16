@@ -2,3 +2,10 @@
 hr {
   border: 1px solid $neutral-light-blue;
 }
+
+.question {
+  &:hover {
+    cursor: pointer;
+    color: $primary-soft-red;
+  }
+}
